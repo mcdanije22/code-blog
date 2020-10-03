@@ -1,0 +1,74 @@
+#landingHeader {
+  height: 32vh;
+  background-color: #f2fbfd;
+  margin-bottom: 8rem;
+}
+#headerHero {
+  text-align: center;
+  h1 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+#landingPageContainer {
+  main {
+    margin: 0 1rem;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+}
+.container {
+  margin-bottom: 4rem;
+}
+#landingPageContainer main h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #ec5131;
+}
+#viewAllOption {
+  margin-top: 2rem;
+}
+@media only screen and (min-width: 992px) {
+  #landingPageContainer main {
+    margin: 0 10rem;
+  }
+  #landingPageContainer main h1 {
+    font-size: 1.8rem;
+  }
+  #landingHeader {
+    margin-bottom: 20rem;
+    height: 36vh;
+  }
+  #heroButton {
+    width: 10rem;
+    height: auto;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  #headerHero h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
+  #headerHero h3 {
+    font-size: 1.5rem;
+  }
+  .projectImage {
+    height: 250px;
+    width: 450px;
+  }
+  #viewAllOption {
+    font-size: 1.5rem;
+  }
+  #newsletterSection {
+    max-width: 500px;
+  }
+  #newsletterSection p {
+    font-size: 1.5rem;
+  }
+}

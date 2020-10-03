@@ -1,0 +1,56 @@
+$desktop: 1024px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+#mobileNavContainer {
+  padding: 1rem;
+}
+#mobileNav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  list-style: none;
+  margin: 0;
+  #drawerMenu {
+    padding: 0;
+    margin: 0;
+  }
+}
+#drawerTopMenu {
+  margin: 0;
+  margin-bottom: 2rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  a {
+    color: black;
+    font-size: 1.2rem;
+  }
+}
+.ant-drawer-body {
+  padding: 1rem;
+}
+#drawerVerticalMenu {
+  margin: 0;
+  li {
+    list-style: none;
+    text-align: center;
+    padding-bottom: 1rem;
+    a {
+      color: black;
+      font-size: 1.5rem;
+      font-weight: lighter;
+      line-height: 2.1;
+      letter-spacing: 1px;
+      font-family: "Open Sans", sans-serif;
+      color: black;
+    }
+  }
+}
+@include desktop {
+  #mobileNavContainer {
+    display: none;
+  }
+}
