@@ -51,13 +51,16 @@
     font-size: 1.5rem;
     margin-top: 1rem;
   }
-  #headerHero h1 {
-    font-size: 4rem;
-    margin: 0;
+  #headerHero {
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
   }
-  #headerHero h3 {
-    font-size: 1.5rem;
-  }
+
   .projectImage {
     height: 250px;
     width: 450px;
@@ -67,8 +70,8 @@
   }
   #newsletterSection {
     max-width: 500px;
-  }
-  #newsletterSection p {
-    font-size: 1.5rem;
+    p {
+      font-size: 1.5rem;
+    }
   }
 }
