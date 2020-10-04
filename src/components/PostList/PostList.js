@@ -1,7 +1,8 @@
 import React from "react"
+import { Link } from "gatsby"
+import "./PostList.scss"
 
 const PostList = ({ blogPosts }) => {
-  console.log(blogPosts)
   return (
     <div id="postListContainer">
       <ul id="posts">
@@ -9,12 +10,10 @@ const PostList = ({ blogPosts }) => {
           console.log(post)
           return (
             <li className="post" key={i}>
-              {/* <h4>{post.frontmatter.title}</h4>
-              <h5>{post.frontmatter.author}</h5>
-              <p>{post.frontmatter.description}...</p>
-              <Link href={`/blog/${post.slug}`}>
-                <a>Read more</a>
-              </Link> */}
+              <h4>{post.node.frontmatter.title}</h4>
+              <h5>{post.node.frontmatter.subtitle}</h5>
+              <p>{post.node.excerpt}...</p>
+              <Link to={`${post.node.frontmatter.slug}`}>Read more</Link>
             </li>
           )
         })}

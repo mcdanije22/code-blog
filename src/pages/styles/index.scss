@@ -1,3 +1,9 @@
+$desktop: 1024px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
 #landingHeader {
   height: 32vh;
   background-color: #f2fbfd;
@@ -34,7 +40,7 @@
 #viewAllOption {
   margin-top: 2rem;
 }
-@media only screen and (min-width: 992px) {
+@include desktop {
   #landingPageContainer main {
     margin: 0 10rem;
   }

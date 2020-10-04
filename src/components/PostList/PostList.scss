@@ -1,0 +1,42 @@
+$desktop: 1024px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+.post {
+  margin: 2rem 0;
+  max-width: 700px;
+  h4 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  h5 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #585858;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+@include desktop {
+  .post {
+    margin: 4rem 0;
+    h4 {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+    h5 {
+      font-size: 1.5rem;
+      font-weight: lighter;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    a {
+      font-size: 1.5rem;
+    }
+  }
+}

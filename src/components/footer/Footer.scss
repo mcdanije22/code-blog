@@ -1,0 +1,54 @@
+$desktop: 1024px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+#footerContainer {
+  background-color: #f2fbfd;
+  padding: 1rem 0 0 0;
+  position: relative;
+
+  p {
+    text-align: center;
+    margin: 2rem 0 0 0;
+    padding-bottom: 0.5rem;
+  }
+  h1 {
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    font-size: 0.7rem;
+  }
+}
+#footerLinks {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  li {
+    margin: 0.5rem 0;
+  }
+  a {
+    color: black;
+  }
+}
+
+@include desktop {
+  #footerContainer {
+    height: 25vh;
+    .copyRight {
+      position: absolute;
+      bottom: 0;
+      font-size: 1rem;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  #footerLinks {
+    display: flex;
+    justify-content: center;
+    li {
+      margin-right: 1rem;
+      font-size: 1.3rem;
+    }
+  }
+}
