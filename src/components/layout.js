@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import "./layout.css"
 import Header from "./header"
 import Footer from "../components/footer/Footer"
+import MobileNav from "./navBar/MobileNav"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -21,6 +22,9 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
+        <nav>
+          <MobileNav />
+        </nav>
         <main>{children}</main>
         <footer>
           <Footer />

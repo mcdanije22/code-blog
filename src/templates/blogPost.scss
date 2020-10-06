@@ -1,0 +1,15 @@
+$desktop: 1024px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+.blogPostContainer {
+  .newsPostContent {
+    margin-top: 1rem;
+  }
+}
+@include desktop {
+  .blogPostContainer img {
+  }
+}
