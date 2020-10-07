@@ -7,8 +7,18 @@ $desktop: 1024px;
 #footerContainer {
   background-color: #f2fbfd;
   padding: 1rem 0 0 0;
+  width: 100%;
+  bottom: 0;
   position: relative;
+  height: 35vh;
 
+  .copyRight {
+    bottom: 0;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+  }
   p {
     text-align: center;
     margin: 2rem 0 0 0;
@@ -35,13 +45,6 @@ $desktop: 1024px;
 @include desktop {
   #footerContainer {
     height: 25vh;
-    .copyRight {
-      position: absolute;
-      bottom: 0;
-      font-size: 1rem;
-      text-align: center;
-      width: 100%;
-    }
   }
   #footerLinks {
     display: flex;

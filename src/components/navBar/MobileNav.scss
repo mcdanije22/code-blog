@@ -6,6 +6,9 @@ $desktop: 1024px;
 }
 #mobileNavContainer {
   padding: 1rem;
+  a {
+    color: black;
+  }
 }
 #mobileNav {
   display: flex;

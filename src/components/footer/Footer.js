@@ -25,7 +25,10 @@ const Footer = () => {
           <Link to="/">Contact Us</Link>
         </li>
       </ul>
-      <p className="copyRight">@2020 Josh McDaniel. All Rights Reserved </p>
+      <p className="copyRight">
+        © {new Date().getFullYear()} <Link>Josh McDaniel.</Link> All Rights
+        Reserved{" "}
+      </p>
     </div>
   )
 }

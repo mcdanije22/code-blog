@@ -16,7 +16,9 @@ const MobileNav = () => {
   return (
     <div id="mobileNavContainer">
       <ul id="mobileNav">
-        <li>Code Along</li>
+        <li>
+          <Link to="/">Code Along</Link>
+        </li>
         <li>
           <Button
             type="ghost"

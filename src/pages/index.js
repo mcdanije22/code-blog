@@ -12,7 +12,10 @@ const { Search } = Input
 const IndexPage = () => {
   const blogPosts = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: frontmatter___date }
+        limit: 2
+      ) {
         edges {
           node {
             frontmatter {
@@ -50,7 +53,7 @@ const IndexPage = () => {
           ></path>
         </svg>
       </div>
-      <main>
+      <main style={{ height: "auto" }}>
         <Row justify="center" gutter={[32, 0]}>
           <Col xs={{ span: 24 }} lg={{ span: 12 }}>
             <div id="projectsContainer" className="container">
@@ -66,7 +69,7 @@ const IndexPage = () => {
             <div id="blogContainer" className="container">
               <h1>Recently Posted</h1>
               <PostList blogPosts={blogPosts.allMarkdownRemark.edges} />
-              <Link to="/">
+              <Link to="/blog">
                 <h4 id="viewAllOption">View all</h4>
               </Link>
             </div>

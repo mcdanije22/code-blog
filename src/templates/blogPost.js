@@ -16,8 +16,8 @@ export default function Template({ data }) {
     <Layout>
       <SEO title="Blog" />
       <Row justify="center">
-        <div className="blogPostContainer">
-          <Col xs={24} lg={8}>
+        <Col xs={24} lg={8}>
+          <div className="blogPostContainer">
             <div id="postInfo">
               <h1>{frontmatter.title}</h1>
               <h3>{frontmatter.subtitle}</h3>
@@ -27,8 +27,8 @@ export default function Template({ data }) {
               className="newsPostContent"
               dangerouslySetInnerHTML={{ __html: html }}
             />
-          </Col>
-        </div>
+          </div>
+        </Col>
       </Row>
     </Layout>
   )
