@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
 import MobileNav from "../components/navBar/MobileNav"
-import { Button, Input, Row, Col } from "antd"
+import { Button, Input, Row, Col, Tag } from "antd"
 import "./styles/index.scss"
 import PostList from "../components/PostList/PostList"
 import Footer from "../components/footer/Footer"
@@ -43,7 +43,7 @@ const IndexPage = () => {
           <h3>Welcome to the #1 place for</h3>
           <h3>Everything you need to become a better web developer </h3>
           <Button type="primary" id="heroButton">
-            Go Pro
+            Subscribe
           </Button>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -55,17 +55,16 @@ const IndexPage = () => {
       </div>
       <main style={{ height: "auto" }}>
         <Row justify="center" gutter={[32, 0]}>
-          <Col xs={{ span: 24 }} lg={{ span: 12 }}>
-            <div id="projectsContainer" className="container">
+          <Col xs={{ span: 24 }} lg={{ span: 8 }}>
+            {/* <div id="projectsContainer" className="container">
               <h1>Projects to Work on</h1>
               <ul id="projectList">
-                {/* <img src="https://via.placeholder.com/450x250" /> */}
                 <img
                   src="https://via.placeholder.com/150"
                   className="projectImage"
                 />
               </ul>
-            </div>
+            </div> */}
             <div id="blogContainer" className="container">
               <h1>Recently Posted</h1>
               <PostList blogPosts={blogPosts.allMarkdownRemark.edges} />
@@ -75,20 +74,35 @@ const IndexPage = () => {
             </div>
           </Col>
           <Col xs={{ span: 24 }} lg={{ span: 8 }}>
-            <p className="container">
+            {/* <p className="container">
               In publishing and graphic design, Lorem ipsum is a placeholder
               text commonly used to demonstrate the visual form of a document In
               publishing and graphic design, Lorem ipsum is a placeholder text
               commonly used to demonstrate the visual form of a document
-            </p>
+            </p> */}
+            <div className="container">
+              <h1>Popular Categories</h1>
+              <ul>
+                <li>
+                  <Link to="/">
+                    <Tag color="magenta">React</Tag>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/">
+                    <Tag color="red">Javascript</Tag>
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </Col>
-          <Col xs={{ span: 24 }} lg={{ span: 20 }}>
+          <Col xs={{ span: 24 }} lg={{ span: 16 }}>
             <div id="newsletterSection" className="container">
               <h1>Get Notified</h1>
               <p>Join the Newsletter for Exclusive content </p>
               <Search
                 placeholder="Enter Email Address"
-                enterButton="Search"
+                enterButton="Subscribe"
                 size="large"
                 onSearch={value => console.log(value)}
               />

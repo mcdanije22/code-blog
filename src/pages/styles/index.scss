@@ -42,14 +42,13 @@ $desktop: 1024px;
 }
 @include desktop {
   #landingPageContainer main {
-    margin: 0 10rem;
+    // margin: 0 10rem;
   }
   #landingPageContainer main h1 {
     font-size: 1.8rem;
   }
   #landingHeader {
     margin-bottom: 20rem;
-    height: 36vh;
   }
   #heroButton {
     width: 10rem;

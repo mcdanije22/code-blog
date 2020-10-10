@@ -27,7 +27,9 @@ const Blog = () => {
   return (
     <div>
       <Layout>
-        <PostList blogPosts={blogPosts.allMarkdownRemark.edges} />
+        <main>
+          <PostList blogPosts={blogPosts.allMarkdownRemark.edges} />
+        </main>
       </Layout>
     </div>
   )
