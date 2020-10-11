@@ -1,0 +1,35 @@
+$desktop: 1024px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+#desktopNavContainer {
+  display: none;
+}
+
+@include desktop {
+  #desktopNavContainer {
+    cursor: pointer;
+    display: flex;
+    .ant-row,
+    .ant-row-center {
+      width: 100%;
+      margin: 1rem;
+    }
+  }
+  .navGroup {
+    display: flex;
+    li {
+      margin-right: 1rem;
+      font-size: 1.2rem;
+    }
+    .social {
+      margin-right: 2rem;
+      font-size: 1.2rem;
+      a {
+        color: #585858;
+      }
+    }
+  }
+}

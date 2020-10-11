@@ -1,11 +1,12 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
-import MobileNav from "../components/navBar/MobileNav"
 import { Button, Input, Row, Col, Tag } from "antd"
 import "./styles/index.scss"
 import PostList from "../components/PostList/PostList"
 import Footer from "../components/footer/Footer"
+import MobileNav from "../components/navBar/MobileNav"
+import DesktopNav from "../components/navBar/DesktopNav"
 
 const { Search } = Input
 
@@ -37,6 +38,7 @@ const IndexPage = () => {
       <div id="landingHeader">
         <nav>
           <MobileNav />
+          <DesktopNav />
         </nav>
         <div id="headerHero">
           <h1>Title</h1>
@@ -54,7 +56,7 @@ const IndexPage = () => {
         </svg>
       </div>
       <main style={{ height: "auto" }}>
-        <Row justify="center" gutter={[32, 0]}>
+        <Row justify="center">
           <Col xs={{ span: 24 }} lg={{ span: 8 }}>
             {/* <div id="projectsContainer" className="container">
               <h1>Projects to Work on</h1>
@@ -73,7 +75,8 @@ const IndexPage = () => {
               </Link>
             </div>
           </Col>
-          <Col xs={{ span: 24 }} lg={{ span: 8 }}>
+          <Col xs={{ span: 0 }} lg={{ span: 4 }}></Col>
+          <Col xs={{ span: 24 }} lg={{ span: 4 }}>
             {/* <p className="container">
               In publishing and graphic design, Lorem ipsum is a placeholder
               text commonly used to demonstrate the visual form of a document In
@@ -91,6 +94,16 @@ const IndexPage = () => {
                 <li>
                   <Link to="/">
                     <Tag color="red">Javascript</Tag>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/">
+                    <Tag color="cyan">Python</Tag>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/">
+                    <Tag color="blue">Html</Tag>
                   </Link>
                 </li>
               </ul>

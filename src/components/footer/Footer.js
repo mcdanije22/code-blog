@@ -26,8 +26,8 @@ const Footer = () => {
         </li>
       </ul>
       <p className="copyRight">
-        © {new Date().getFullYear()} <Link>Josh McDaniel.</Link> All Rights
-        Reserved{" "}
+        © {new Date().getFullYear()} <Link to="/">Josh McDaniel.</Link> All
+        Rights Reserved{" "}
       </p>
     </div>
   )
