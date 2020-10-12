@@ -24,10 +24,14 @@ export default function Template({ data }) {
             </div>
             <Img fluid={frontmatter.featuredImage.childImageSharp.fluid} />
             <div
-              className="newsPostContent"
+              className="blogPostContent"
               dangerouslySetInnerHTML={{ __html: html }}
             />
           </div>
+        </Col>
+        <Col xs={{ span: 0 }} lg={{ span: 4 }}></Col>
+        <Col xs={{ span: 0 }} lg={{ span: 4 }}>
+          <div className="blogSideBar">t</div>
         </Col>
       </Row>
     </Layout>

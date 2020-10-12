@@ -6,6 +6,7 @@ import "./layout.css"
 import Header from "./header"
 import Footer from "../components/footer/Footer"
 import MobileNav from "./navBar/MobileNav"
+import DesktopNav from "./navBar/DesktopNav"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,6 +25,7 @@ const Layout = ({ children }) => {
       <div>
         <nav>
           <MobileNav />
+          <DesktopNav />
         </nav>
         <main>{children}</main>
         <footer>

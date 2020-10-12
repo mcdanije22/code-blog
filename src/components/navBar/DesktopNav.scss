@@ -12,6 +12,7 @@ $desktop: 1024px;
   #desktopNavContainer {
     cursor: pointer;
     display: flex;
+
     .ant-row,
     .ant-row-center {
       width: 100%;
@@ -20,9 +21,13 @@ $desktop: 1024px;
   }
   .navGroup {
     display: flex;
+    list-style: none;
     li {
       margin-right: 1rem;
       font-size: 1.2rem;
+    }
+    a {
+      color: black;
     }
     .social {
       margin-right: 2rem;

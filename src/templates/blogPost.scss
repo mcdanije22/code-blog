@@ -5,12 +5,18 @@ $desktop: 1024px;
   }
 }
 .blogPostContainer {
-  .newsPostContent {
+  .blogPostContent {
     margin-top: 1rem;
   }
 }
 @include desktop {
-  .newsPostContent {
-    font-size: 1rem;
+  .blogPostContainer {
+    margin: 2rem 0 0 1rem;
+    .blogPostContent {
+      font-size: 1rem;
+    }
+  }
+  .blogSideBar {
+    margin-top: 2rem;
   }
 }
