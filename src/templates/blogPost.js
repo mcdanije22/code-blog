@@ -16,7 +16,7 @@ export default function Template({ data }) {
     <Layout>
       <SEO title="Blog" />
       <Row justify="center">
-        <Col xs={24} lg={8}>
+        <Col xs={24} lg={12}>
           <div className="blogPostContainer">
             <div id="postInfo">
               <h1>{frontmatter.title}</h1>
@@ -29,8 +29,7 @@ export default function Template({ data }) {
             />
           </div>
         </Col>
-        <Col xs={{ span: 0 }} lg={{ span: 4 }}></Col>
-        <Col xs={{ span: 0 }} lg={{ span: 4 }}>
+        <Col xs={{ span: 0 }} lg={{ span: 2 }}>
           <div className="blogSideBar">t</div>
         </Col>
       </Row>

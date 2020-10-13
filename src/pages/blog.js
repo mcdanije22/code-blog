@@ -29,13 +29,15 @@ const Blog = () => {
   return (
     <Layout>
       <Row justify="center">
-        <div id="blogListContainer">
-          <Col xs={24} lg={8}>
+        <Col xs={24} lg={12}>
+          <div id="blogListContainer">
+            <div id="blogPostHeader">
+              <h1>Latest</h1>
+              <h3>All of the latest post</h3>
+              <hr />
+            </div>
             <PostList blogPosts={blogPosts.allMarkdownRemark.edges} />
-          </Col>
-        </div>
-        <Col xs={{ span: 0 }} lg={{ span: 4 }}>
-          t
+          </div>
         </Col>
       </Row>
     </Layout>
