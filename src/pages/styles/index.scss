@@ -5,18 +5,21 @@ $desktop: 1024px;
   }
 }
 #landingHeader {
-  height: 32vh;
-  background-color: #f2fbfd;
+  height: 28vh;
+  // background-color: #f2fbfd;
+  background-color: #ec5131;
   margin-bottom: 8rem;
 }
 #headerHero {
   text-align: center;
   h1 {
     font-size: 1.8rem;
+    color: white;
   }
   h3 {
     font-size: 1rem;
     line-height: 1.5;
+    color: white;
   }
 }
 #landingPageContainer {
@@ -49,6 +52,7 @@ $desktop: 1024px;
   }
   #landingHeader {
     margin-bottom: 20rem;
+    height: 34vh;
   }
   #heroButton {
     width: 10rem;
@@ -59,7 +63,6 @@ $desktop: 1024px;
   #headerHero {
     h1 {
       font-size: 3rem;
-      margin: 0;
     }
     h3 {
       font-size: 1.5rem;

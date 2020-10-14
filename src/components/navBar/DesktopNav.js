@@ -15,18 +15,18 @@ const DesktopNav = () => {
         <Col xs={{ span: 24 }} lg={{ span: 8 }}>
           <ul className="navGroup">
             <Link to="/">
-              <li style={{ color: "#ec5131" }}>Code Along</li>
+              <li>Code Along</li>
             </Link>
             <Link to="/blog">
               <li>Posts</li>
             </Link>
-            <Link to="/">
+            <Link to="/tips">
               <li>Tips</li>
             </Link>
             <Link to="/">
               <li>Portfolio</li>
             </Link>
-            <Link to="/">
+            <Link to="/about">
               <li>About</li>
             </Link>
           </ul>

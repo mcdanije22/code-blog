@@ -5,14 +5,16 @@ $desktop: 1024px;
   }
 }
 .blogPostContainer {
-  max-width: 762px;
-  .blogPostContent {
-    margin-top: 1rem;
-  }
+  max-width: 500px;
+  margin: 0 auto;
+  margin: 2rem 0;
 }
 @include desktop {
-  .blogPostContainer {
+  #blogPageContainer {
     margin: 2rem 0 0 1rem;
+  }
+  .blogPostContainer {
+    max-width: 800px;
     .blogPostContent {
       font-size: 1rem;
     }

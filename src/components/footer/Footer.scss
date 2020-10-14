@@ -5,13 +5,15 @@ $desktop: 1024px;
   }
 }
 #footerContainer {
-  background-color: #f2fbfd;
+  // background-color: #f2fbfd;
+  background-color: #ec5131;
   padding: 1rem 0 0 0;
   width: 100%;
   bottom: 0;
   position: relative;
   height: 35vh;
   margin-top: 4rem;
+  color: white;
   .copyRight {
     bottom: 0;
     font-size: 1rem;
@@ -24,11 +26,6 @@ $desktop: 1024px;
     margin: 2rem 0 0 0;
     padding-bottom: 0.5rem;
   }
-  h1 {
-    text-align: center;
-    margin: 2rem 0 1rem 0;
-    font-size: 0.7rem;
-  }
 }
 #footerLinks {
   text-align: center;
@@ -38,13 +35,14 @@ $desktop: 1024px;
     margin: 0.5rem 0;
   }
   a {
-    color: black;
+    color: white;
+    font-size: 1.2rem;
   }
 }
 
 @include desktop {
   #footerContainer {
-    height: 25vh;
+    height: 20vh;
   }
   #footerLinks {
     display: flex;

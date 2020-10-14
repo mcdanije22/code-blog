@@ -46,7 +46,7 @@ const MobileNav = () => {
             </li>
             <li>
               <CloseOutlined
-                style={{ fontSize: "1.5rem", color: "black" }}
+                style={{ fontSize: "1.5rem", color: "white" }}
                 onClick={() => {
                   onClose()
                 }}
@@ -55,22 +55,22 @@ const MobileNav = () => {
           </ul>
           <ul id="drawerVerticalMenu">
             <li>
-              <Link to="/">Tutorials</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/">Tips & Tricks</Link>
+              <Link to="/">Posts</Link>
             </li>
             <li>
-              <Link to="/">Blog</Link>
+              <Link to="/">Tips</Link>
             </li>
             <li>
-              <Link to="/">Sign Up/Account</Link>
+              <Link to="/">Portfolio</Link>
             </li>
             <li>
               <Link to="/">About</Link>
             </li>
             <li>
-              <Link to="/">Contact Us</Link>
+              <Link to="/">Subscribe</Link>
             </li>
           </ul>
         </div>

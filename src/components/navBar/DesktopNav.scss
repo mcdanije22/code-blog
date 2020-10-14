@@ -10,9 +10,12 @@ $desktop: 1024px;
 
 @include desktop {
   #desktopNavContainer {
-    cursor: pointer;
     display: flex;
-
+    background-color: #ec5131;
+    ul {
+      padding: 0;
+      margin: 0;
+    }
     .ant-row,
     .ant-row-center {
       width: 100%;
@@ -22,19 +25,17 @@ $desktop: 1024px;
   .navGroup {
     display: flex;
     list-style: none;
+    a {
+      color: white;
+      cursor: pointer;
+    }
     li {
       margin-right: 1rem;
       font-size: 1.2rem;
     }
-    a {
-      color: black;
-    }
     .social {
       margin-right: 2rem;
       font-size: 1.2rem;
-      a {
-        color: #585858;
-      }
     }
   }
 }

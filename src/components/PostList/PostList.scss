@@ -5,7 +5,7 @@ $desktop: 1024px;
   }
 }
 #postListContainer {
-  max-width: 762px;
+  max-width: 500px;
 }
 #posts {
   list-style: none;
@@ -21,7 +21,6 @@ $desktop: 1024px;
   h5 {
     font-size: 1rem;
     margin-bottom: 1rem;
-    color: #585858;
   }
   p {
     font-size: 1rem;
@@ -29,6 +28,9 @@ $desktop: 1024px;
 }
 
 @include desktop {
+  #postListContainer {
+    max-width: 762px;
+  }
   .post {
     margin: 2rem 0;
     h4 {
@@ -37,7 +39,6 @@ $desktop: 1024px;
     }
     h5 {
       font-size: 1.5rem;
-      font-weight: lighter;
     }
     p {
       font-size: 1.5rem;

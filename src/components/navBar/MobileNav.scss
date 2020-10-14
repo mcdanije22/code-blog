@@ -6,8 +6,9 @@ $desktop: 1024px;
 }
 #mobileNavContainer {
   padding: 1rem;
+  background-color: #ec5131;
   a {
-    color: black;
+    color: white;
   }
 }
 #mobileNav {
@@ -28,27 +29,34 @@ $desktop: 1024px;
   display: flex;
   justify-content: space-between;
   a {
-    color: black;
+    color: white;
     font-size: 1.2rem;
   }
+}
+.ant-btn,
+.ant-btn-ghost {
+  color: white;
 }
 .ant-drawer-body {
   padding: 1rem;
 }
+.ant-drawer-body {
+  background-color: #ec5131;
+}
 #drawerVerticalMenu {
   margin: 0;
+
   li {
     list-style: none;
     text-align: center;
     padding-bottom: 1rem;
     a {
-      color: black;
       font-size: 1.5rem;
       font-weight: lighter;
       line-height: 2.1;
       letter-spacing: 1px;
       font-family: "Open Sans", sans-serif;
-      color: black;
+      color: white;
     }
   }
 }

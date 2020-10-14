@@ -17,16 +17,18 @@ export default function Template({ data }) {
       <SEO title="Blog" />
       <Row justify="center">
         <Col xs={24} lg={12}>
-          <div className="blogPostContainer">
-            <div id="postInfo">
-              <h1>{frontmatter.title}</h1>
-              <h3>{frontmatter.subtitle}</h3>
+          <div id="blogPageContainer">
+            <div className="blogPostContainer">
+              <div id="postInfo">
+                <h1>{frontmatter.title}</h1>
+                <h3>{frontmatter.subtitle}</h3>
+              </div>
+              <Img fluid={frontmatter.featuredImage.childImageSharp.fluid} />
+              <div
+                className="blogPostContent"
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
             </div>
-            <Img fluid={frontmatter.featuredImage.childImageSharp.fluid} />
-            <div
-              className="blogPostContent"
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
           </div>
         </Col>
         <Col xs={{ span: 0 }} lg={{ span: 2 }}>
